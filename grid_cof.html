@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive_Coffee_grid</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0%;
+            margin: 0%;
+        }
+        body{
+            background-color: black;
+        }
+        .main-box {
+            /* border: 2px solid red; */
+            margin: auto;
+            height:750px;
+            margin-top: 40px;
+            padding-left: 30px;
+            width: 100%;
+            background-color: rgb(250, 236, 219);
+            /* background: url("https://images.designtrends.com/wp-content/uploads/2015/12/23052800/Cool-Gold-Background.jpg"); */
+        }
+        .container {
+            display: grid;
+             width: 700px;
+            grid-template-columns: repeat(3, 1fr);
+            padding-top: 50px;
+            padding-left:60px;
+            padding-right: 60px;
+        }
+        @media all and (min-width:201px) and (max-width:451px) {
+.container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.cards{
+    width: 220px;
+}
+.main-box{
+    background-color: rgb(135, 197, 222);
+}
+body{
+    background-color: rgb(135, 197, 222);
+}
+        }
+
+@media all and (min-width:401px) and (max-width:720px) {
+   .container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   }
+body{
+    background-color: brown;
+}
+.main-box{
+    background-color: brown;
+}
+.cards{
+    width: 310px;
+}
+
+}
+ 
+        .cards {
+            padding-right: 30px;
+            padding-bottom: 30px;
+            padding-left: 30px;
+            padding-top: 20px;
+            /* border: 2px solid green; */
+            box-shadow: rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+            background-color: white;
+            border-radius: 14px;
+            margin: 30px;
+            width: 430px;
+        }
+        .cards>h1 {
+            padding: 10px;
+
+        }
+        .cards>p {
+            margin-top: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-box">
+        <div class="container">
+            <div class="cards">
+                <h1>cappuccino <span style="margin-left: 135px; color:rgb(249, 217, 13);;">$49</span> </h1>
+                <p> usage of the internet is becoming more common due to rapid advance. </p>
+            </div>
+            <div class="cards">
+                <h1>cappuccino <span style="margin-left: 135px; color:rgb(249, 217, 13);;">$49</span> </h1>
+                <p> usage of the internet is becoming more common due to rapid advance. </p>
+            </div>
+            <div class="cards">
+                <h1>cappuccino <span style="margin-left: 135px; color:rgb(249, 217, 13);;">$49</span> </h1>
+                <p> usage of the internet is becoming more common due to rapid advance. </p>
+            </div>
+            <div class="cards">
+                <h1>cappuccino <span style="margin-left: 135px; color:rgb(249, 217, 13);;">$49</span> </h1>
+                <p> usage of the internet is becoming more common due to rapid advance. </p>
+            </div>
+            <div class="cards">
+                <h1>cappuccino <span style="margin-left: 135px; color:rgb(249, 217, 13);;">$49</span> </h1>
+                <p> usage of the internet is becoming more common due to rapid advance. </p>
+            </div>
+            <div class="cards">
+                <h1>cappuccino <span style="margin-left: 135px; color:rgb(249, 217, 13);;">$49</span> </h1>
+                <p> usage of the internet is becoming more common due to rapid advance. </p>
+            </div>
+            <div class="cards">
+                <h1>cappuccino <span style="margin-left: 135px; color:rgb(249, 217, 13);">$49</span> </h1>
+                <p> usage of the internet is becoming more common due to rapid advance. </p>
+            </div>
+            <div class="cards">
+                <h1>cappuccino <span style="margin-left: 135px; color:rgb(249, 217, 13);">$49</span> </h1>
+                <p> usage of the internet is becoming more common due to rapid advance. </p>
+            </div>
+            <div class="cards">
+                <h1>cappuccino <span style="margin-left: 135px; color:rgb(249, 217, 13);">$49</span> </h1>
+                <p> usage of the internet is becoming more common due to rapid advance. </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
